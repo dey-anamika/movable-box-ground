@@ -1,0 +1,43 @@
+button {
+    font-size: 14px;
+    background: none;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.demo-form {
+    .form-group {
+        div {
+            margin: 10px;
+        }
+    }
+}
+.playground {
+    height: 600px;
+    width: 1500px;
+    background-color: #fffaf0;
+    border: 2px solid #ffebcd;
+    border-radius: 4px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: #d77c2f;
+    color: #d77c2f;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px 0px;
+    cursor: default;
+
+    span {
+        color: #f5f5f5;
+    }
+}
+.box:focus {
+    background-color: red;
+    
+}

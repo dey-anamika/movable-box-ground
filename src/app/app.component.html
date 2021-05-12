@@ -1,0 +1,23 @@
+<div class="header">
+    <button (click)="newBlock()">Add New Block</button>
+    <div class="form-group">
+        <label for="keyValue">Keys To Use:</label>
+        <div>
+            <input id="arrow" type="radio" value="arrow" name="keyValue" ngModel="keyValue"
+                (change)="changeValue($event)" checked="true">
+            <label for="arrow">Arrow Keys</label>
+        </div>
+        <div>
+            <input id="wasd" type="radio" value="wasd" name="keyValue" ngModel="keyValue"
+                (change)="changeValue($event)">
+            <label for="wasd">W-A-S-D</label>
+        </div>
+    </div>
+</div>
+
+<div style="position: fixed;" class="playground">
+    <button *ngFor="let con of container" id={{con.id}} class="box" (keydown)="keydownFunction($event)"
+        [ngStyle]="{'z-index': con.index}">
+        <span>Box No. {{con.index}}</span>
+    </button>
+</div>
