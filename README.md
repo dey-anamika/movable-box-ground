@@ -1,6 +1,6 @@
 # movable-box-ground
 
-This is a demo project for 1st round for FlyBase.
+This is a demo project for 2nd round for FlyBase.
 
 Steps to run the project on local system are as follows:
 
